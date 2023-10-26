@@ -140,7 +140,7 @@ console.log(whereIsWaldo[2][1][1])
 //++++++++++++++++++++++++++++++//
 // 1. Write code that logs "Love me, pet me! HISSSSSS!" 20 times.
 // 2. For every even number in your loop, log "...human...why you taking pictures of me?...", c, or "...why does the red dot always get away..." at random.
-// const questions = ["0 ...human...why you taking pictures of me?...", "1 ...the catnip made me do it...", "2 ...why does the red dot always get away..."]
+const questions = ["0 ...human...why you taking pictures of me?...", "1 ...the catnip made me do it...", "2 ...why does the red dot always get away..."]
 for(let i = 1; i <= 20; i++) {
     if(i % 2 === 0) {
         console.log("Love me, pet me! HISSSSSS!")
