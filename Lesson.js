@@ -21,24 +21,41 @@
 // 2. If a number is divisible by 3 log "Fizz" instead of the number.
 // 3. If a number is divisible by 5 log "Buzz" instead of the number.
 // 4. If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number.
-for(let i = 1;i <= 100; i++) {
-    if(i % 3 === 0 || i % 5 === 0) {
-        console.log("FizzBuzz")
-    }
-    else if(i % 3 === 0) {
-        console.log("Fizz")
-    }
-    else if(i % 5 === 0) {
-        console.log("Buzz")
-    }
-    else {
-        console.log(i)
-    }
-}
+// for(let i = 1;i <= 100; i++) {
+//     if(i % 3 === 0 || i % 5 === 0) {
+//         console.log("FizzBuzz")
+//     }
+//     else if(i % 3 === 0) {
+//         console.log("Fizz")
+//     }
+//     else if(i % 5 === 0) {
+//         console.log("Buzz")
+//     }
+//     else {
+//         console.log(i)
+//     }
+// }
 
 //++++++++++++++++++++++++++++++//
 //         Wild Wild West       //
 //++++++++++++++++++++++++++++++//
+// 1. Plantee just had her birthday; change Plantee's array to reflect her being a year older.
+// 2. Change Wolfy's hometown from "Yukon Territory" to "Gotham City".
+// 3. Give D'Art a second hometown by adding "Hawkins"
+// 4. Porgee decides that Wolfy can't be named "Wolfy" anymore. Remove "Wolfy" from the wolfyarray and replace it with "Gameboy".
+const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
+const sharky = ["Sharky", "shark", 20, "Left Coast"]
+const plantee = ["Plantee", "plant",  5000 , "Mordor"]
+const porgee = ["Porgee", "Porg", 186, "Ahch-To"]
+const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
+
+plantee[2] = 5001
+wolfy[3] = "Gotham City"
+dart.push("Hawkins")
+wolfy.splice(0,1,"Gameboy")
+console.log(plantee)
+console.log(wolfy)
+console.log(dart)
 
 //++++++++++++++++++++++++++++++//
 //   Yell at the Ninja Turtles  //
