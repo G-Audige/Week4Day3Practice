@@ -43,23 +43,29 @@
 // 2. Change Wolfy's hometown from "Yukon Territory" to "Gotham City".
 // 3. Give D'Art a second hometown by adding "Hawkins"
 // 4. Porgee decides that Wolfy can't be named "Wolfy" anymore. Remove "Wolfy" from the wolfyarray and replace it with "Gameboy".
-const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
-const sharky = ["Sharky", "shark", 20, "Left Coast"]
-const plantee = ["Plantee", "plant",  5000 , "Mordor"]
-const porgee = ["Porgee", "Porg", 186, "Ahch-To"]
-const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
+// const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
+// const sharky = ["Sharky", "shark", 20, "Left Coast"]
+// const plantee = ["Plantee", "plant",  5000 , "Mordor"]
+// const porgee = ["Porgee", "Porg", 186, "Ahch-To"]
+// const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
 
-plantee[2] = 5001
-wolfy[3] = "Gotham City"
-dart.push("Hawkins")
-wolfy.splice(0,1,"Gameboy")
-console.log(plantee)
-console.log(wolfy)
-console.log(dart)
+// plantee[2] = 5001
+// wolfy[3] = "Gotham City"
+// dart.push("Hawkins")
+// wolfy.splice(0,1,"Gameboy")
+// console.log(plantee)
+// console.log(wolfy)
+// console.log(dart)
 
 //++++++++++++++++++++++++++++++//
 //   Yell at the Ninja Turtles  //
 //++++++++++++++++++++++++++++++//
+// 1. Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
+// 2. Use a for of loop(not a typo - try it out! Try a for ofloop) to call toUpperCase() on each of them and print out the result.
+const ninTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
+for(let cap of ninTurtles) {
+    console.log(cap.toUpperCase())
+}
 
 //++++++++++++++++++++++++++++++//
 //       Methods, Revisited     //
