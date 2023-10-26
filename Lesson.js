@@ -158,3 +158,61 @@ for(let i = 1; i <= 20; i++) {
 const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
 console.log(nums.sort())
 console.log(nums[Math.floor(nums.length / 2)])
+
+
+//////////////////////////////////
+//++++++++++++++++++++++++++++++//
+//        Hungry for More       //
+//++++++++++++++++++++++++++++++//
+//////////////////////////////////
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "Per Scholas hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+
+// Alien Attire
+// Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer! Remove Kristyn's shoe from the array and save it to the variable kristynsShoe. Use that variable to add Kristyn's lost shoe to Thom's accessories array.
+const kristynsShoe = kristynsCloset.splice(0,1)
+console.log(kristynsShoe)
+thomsCloset[2].push(kristynsShoe)
+
+// Dress Us Up
+// Modify your code to put together 3 separate outfits for Kristyn and Thom. Put the output in a sentence to tell us what we'll be wearing. Mix and match!
+console.log(`Tom will be wearing a ${thomsCloset[0][Math.floor(Math.random() * thomsCloset[0].length)]}, ${thomsCloset[1][Math.floor(Math.random() * thomsCloset[1].length)]}, and ${thomsCloset[2][Math.floor(Math.random() * thomsCloset[2].length)]}.`)
+
+// Dirty Laundry
+// Continue looking at the closet arrays:
+// Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
+for(let x of kristynsCloset) {
+    console.log(`WHIRR: Now washing ${x}.`)
+}
+
+// Inventory
+// Thom wants to do inventory on his closet. Using bracket notation, log the arrays containing all of Thom's shirts, pants, and accessories.
+console.log(thomsCloset[0],thomsCloset[1],thomsCloset[2])
