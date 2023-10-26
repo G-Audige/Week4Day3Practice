@@ -123,21 +123,32 @@
 //++++++++++++++++++++++++++++++//
 //         Where is Waldo       //
 //++++++++++++++++++++++++++++++//
-const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
-                    ["Lucinda", "Jacc", "Neff", "Snoop"],
-                    ["Petunia", ["Baked Goods", "Waldo"]]];
+// const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+//                     ["Lucinda", "Jacc", "Neff", "Snoop"],
+//                     ["Petunia", ["Baked Goods", "Waldo"]]];
 //Remove Eggbert (hint look at the slice/splice method(s))
-whereIsWaldo.splice(1,1)
-console.log(whereIsWaldo)
+// whereIsWaldo.splice(1,1)
+// console.log(whereIsWaldo)
 // Change "Neff" to "No One"
-whereIsWaldo[1][2] = "No One"
+// whereIsWaldo[1][2] = "No One"
 // Access and console.log "Waldo"
-console.log(whereIsWaldo[2][1][1])
+// console.log(whereIsWaldo[2][1][1])
 
 
 //++++++++++++++++++++++++++++++//
 //        Excited Kitten        //
 //++++++++++++++++++++++++++++++//
+// 1. Write code that logs "Love me, pet me! HISSSSSS!" 20 times.
+// 2. For every even number in your loop, log "...human...why you taking pictures of me?...", c, or "...why does the red dot always get away..." at random.
+const questions = ["0 ...human...why you taking pictures of me?...", "1 ...the catnip made me do it...", "2 ...why does the red dot always get away..."]
+for(let i = 1; i <= 20; i++) {
+    if(i % 2 === 0) {
+        console.log("Love me, pet me! HISSSSSS!")
+    }
+    else {
+        console.log(questions[Math.floor(Math.random() * 3)])
+    }
+}
 
 //++++++++++++++++++++++++++++++//
 //        Find the Median       //
