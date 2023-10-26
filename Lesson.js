@@ -140,16 +140,21 @@
 //++++++++++++++++++++++++++++++//
 // 1. Write code that logs "Love me, pet me! HISSSSSS!" 20 times.
 // 2. For every even number in your loop, log "...human...why you taking pictures of me?...", c, or "...why does the red dot always get away..." at random.
-const questions = ["0 ...human...why you taking pictures of me?...", "1 ...the catnip made me do it...", "2 ...why does the red dot always get away..."]
-for(let i = 1; i <= 20; i++) {
-    if(i % 2 === 0) {
-        console.log("Love me, pet me! HISSSSSS!")
-    }
-    else {
-        console.log(questions[Math.floor(Math.random() * 3)])
-    }
-}
+// const questions = ["0 ...human...why you taking pictures of me?...", "1 ...the catnip made me do it...", "2 ...why does the red dot always get away..."]
+// for(let i = 1; i <= 20; i++) {
+//     if(i % 2 === 0) {
+//         console.log("Love me, pet me! HISSSSSS!")
+//     }
+//     else {
+//         console.log(questions[Math.floor(Math.random() * 3)])
+//     }
+// }
+
 
 //++++++++++++++++++++++++++++++//
 //        Find the Median       //
 //++++++++++++++++++++++++++++++//
+// Find the median number in the following numsarray, then console.log that number.
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+console.log(nums.sort())
+console.log(nums[Math.floor(nums.length / 2)])
